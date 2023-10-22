@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Inria+Sans:wght@400;700&family=Merriweather:ital,wght@1,400;1,700&family=Montserrat:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing:border-box; */
+}
+
+body {
+    font-family: Dancing Script, sans-serif;
+    background-image:url('img/piano.png');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center;
+    /* background-color: rgb(209, 209, 107); */
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.container h2 {
+    font-size: 1.9rem;
+    font-weight:bold;
+    color: white;
+    text-shadow: 3px 3px 5px black;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: inline;
+    text-align: center;
+
+    background-color: rgba(238, 238, 238, 0.3);
+    backdrop-filter: blur(3px);
+    box-shadow: 10px 10px 30px rgb(0, 0, 0);
+    border-top: 2px solid rgba(248,248,248,0.5);
+    border-radius: 20px;
+    height: 30vh;
+    width: 60vw;
+    overflow: hidden;
+}
+
+.keys {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    /* background-color: rgba(0, 0, 0, 0.5); */
+}
+
+.keys, button {
+    height: 70%;
+    width: 40%;
+    padding: 5px;
+    margin:2px;
+    font-size: 1.2rem;
+    cursor:pointer;
+}
+
+button:nth-of-type(even){
+    background: black;
+    color: white;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:active {
+    transform: scale(0.95);
+    box-shadow: 0px 0px 8px 8px rgb(23, 99, 23);
+}
+
+button.activated {
+    box-shadow: 0px 0px 8px 8px rgb(23, 99, 23);
+}
+
+.wrapper h3 {
+    font-size: 1.3rem;
+    color:white;
+    text-shadow: 1px 1px 1px black;
+
+}
+
+.footer {
+    color: white;
+    padding: 5px;
+    margin-top: 15px;
+    font-size: 1.5rem;
+    position:relative;
+    top: 200px;
+    text-shadow: 1px 1px 1px black;
+}
+
+@media(max-width: 1300px) {
+    .keys {
+        width: 70%;
+    }
+}
+
+@media(max-width: 800px) {
+    .keys {
+        width: 90%;
+    }
+}
+
